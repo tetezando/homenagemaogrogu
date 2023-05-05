@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: rgba(75, 75, 46, 0.911);
+    list-style: none;
+}
+header {
+    background: rgb(75, 75, 46);
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width:60%;
+}
+ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: lavenderblush;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: lightgreen;
+}
+#logo {
+    width: 85px;
+    height: 85px;
+}
+#banner {
+    background-image: url('https://lumiere-a.akamaihd.net/v1/images/disneyplus-the-mandalorian-key-art-poster_6e8dd34b.jpeg?region=0,159,1013,406');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+#video-texto {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+.conteudo {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 90px;
+    font-size: 12px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(139, 117, 103);
+}
+.momentos {
+    width: 80%;
+}
+#texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.descricao {
+    color: rgb(139, 117, 103);
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+.disclaimer {
+    font-size: 12px;
+    color: rgb(139, 117, 103);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.button {
+    width: 180px;
+    height: 50px;
+    background: lightgreen;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    padding: 0px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor:pointer;
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 12px
+}
+.button:hover {
+    background:rgba(75, 75, 46, 0.911);
+    color: lavenderblush;
+}
+.cartoes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cartas {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.cartao {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: rgb(247, 247, 100);
+    font-size: 14px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-shadow: -1px -1px 0px black;
+}
+.cartao:hover {
+    transform: scale(1.04);
+}
+.foto1 {
+    background-image: url('https://i.kym-cdn.com/photos/images/facebook/001/680/185/4c9.jpg');
+    }
+.foto2 {
+    background-image: url('https://static.wikia.nocookie.net/esstarwars/images/4/45/Yoda.jpg/revision/latest?cb=20090507210712');
+}
+.foto3 {
+    background-image: url('https://static.wikia.nocookie.net/yildizsavaslari/images/7/7f/Yaddle-SWCT.png/revision/latest?cb=20210330130239&path-prefix=tr')
+}
+footer {
+    background: rgb(56, 56, 31);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: lavenderblush;
+}
+.rodape {
+    background: rgb(56, 56, 31);
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: lavenderblush;
+}
+.rodapezitcho {
+    display: none;
+}
+@media (max-width: 480px) {
+    header {
+        background: rgb(75, 75, 46);
+        height: 60px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    li {
+        margin: 10px;
+        list-style: none;
+        color: lavenderblush;
+        cursor: pointer;
+        font-size: 11.5px;
+        transition: .5s;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    li:hover {
+        color: lightgreen;
+    }
+    #logo {
+        width: 45px;
+        height: 45px;
+    }
+    #banner {
+        background-image: url('https://lumiere-a.akamaihd.net/v1/images/disneyplus-the-mandalorian-key-art-poster_6e8dd34b.jpeg?region=0,159,1013,406');
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100vw;
+        height: 150px;
+    }
+    #video-texto {
+        margin: 10px;
+        width: 100%;
+        height: auto;
+        padding:10px;
+        display: block;
+        margin-right: 10px;
+        margin-left: 10px;
+        }
+    .conteudo {
+        width: 90vw;
+        margin: 10px;}
+    #texto {
+        width: 90vw;
+        display: block;
+        height: auto;
+        margin: 10px;}
+    .cartoes {
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+    .cartas {
+        width: 90%;
+        display: grid;}
+    .cartoes {
+        width: 100vw;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .cartas {
+        width: 90%;
+        display: block;
+    }
+    .cartao {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: block;
+    padding: 0 0 20px 10px;
+    color: rgb(247, 247, 100);
+    font-size: 12px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-shadow: -1px -1px 0px black;
+    }
+    nav {
+        width:90%;
+        margin: 10px;}
+    .cartao {
+            width: 100%;
+            height: 245px;
+            background-size: cover;
+            background-position: 50% 50%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 1s;
+            display: block;
+            padding: 0 0 20px 10px;
+            color: rgb(247, 247, 100);
+            font-size: 12px;
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            text-shadow: -1px -1px 0px black;
+        }
+    .cartao:hover {
+        transform: scale(1.04);
+        }
+    .foto1 {
+        background-image: url('https://i.kym-cdn.com/photos/images/facebook/001/680/185/4c9.jpg');
+        background-size: cover}
+    .foto2 {
+        background-image: url('./Yoda.webp');
+        background-size: contain;
+        background-repeat: no-repeat;}
+    .foto3 {
+        background-image: url('./Yaddle-SWCT.webp')
+        ; background-size:contain;
+        background-repeat: no-repeat;}
+    footer {
+        margin-top: 15px;
+        height: 180px;
+        display: block;
+    }
+    .rodapezitcho {
+        display: flex;
+        width: 90%;
+    }
+}
